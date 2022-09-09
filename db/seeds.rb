@@ -20,19 +20,5 @@ end
     )
 end
 
-## Genre details
-# Genre.create(name: "confessional")
-# Genre.create(name: "Sonet")
-# Genre.create(name: "Sonet")
-
-## poem details
-# Poem.create(
-#     title:
-#     content:
-#     likes: rand(1...10)
-#     author_id:rand(1...10)
-#     genre_id: rand(1...3)
-# )
-
 
 puts "✅ Done seeding!"
