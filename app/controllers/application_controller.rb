@@ -58,9 +58,4 @@ class ApplicationController < Sinatra::Base
     deleted_poem.destroy
     deleted_poem.to_json
   end
-
-
-
-
-
 end
