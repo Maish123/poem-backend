@@ -53,7 +53,11 @@ class ApplicationController < Sinatra::Base
   end
 
   ##DELETE FUNCTION
-  
+  delete "/poems/:id" do
+    deleted_poem = Poem.find(params[:id])
+    deleted_poem.destroy
+    deleted_poem.to_json
+  end
 
 
 
