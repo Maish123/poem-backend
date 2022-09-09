@@ -1,5 +1,7 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
+
+  ##GET METHODS
   
   # Add your routes here
   get "/" do
@@ -15,6 +17,11 @@ class ApplicationController < Sinatra::Base
   get "/authors" do
     author = Author.all
     author.to_json(include: :poems)
+  end
+
+  get "/genres/:id" do
+    genre = Genre.find(params[:id])
+    genre.to_json(include: :poems)
   end
 
 
