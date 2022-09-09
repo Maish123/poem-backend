@@ -14,6 +14,11 @@ class ApplicationController < Sinatra::Base
     poems.to_json
   end
 
+  get "/poems/:id" do
+    poem = Poem.find(params[:id])
+    poem.to_json
+  end
+
   get "/authors" do
     author = Author.all
     author.to_json(include: :poems)
@@ -36,6 +41,10 @@ class ApplicationController < Sinatra::Base
     )
     new_poem.to_json
   end
+
+  ## PATCH METHODS
+
+
 
 
 
