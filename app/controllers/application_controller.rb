@@ -44,6 +44,17 @@ class ApplicationController < Sinatra::Base
 
   ## PATCH METHODS
 
+  patch "/poems/:id" do
+    updated_poem = Poem.find(params[:id])
+    updated_poem.update(
+      likes: params[:likes]
+    )
+    updated_poem.to_json
+  end
+
+  ##DELETE FUNCTION
+  
+
 
 
 
