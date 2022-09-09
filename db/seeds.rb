@@ -7,12 +7,12 @@ puts "🌱 Seeding spices..."
 end
 
 3.times do
-    Genre.create(genre_name: Faker::Music.genre)
+    Genre.create(genre_name: Faker::Book.genre)
 end
 
 30.times do
     Poem.create(
-        title: Faker::Lorem.word,
+        title: Faker::Quote.robin,
         content: Faker::Quote.matz,
         likes:rand(1...50),
         author_id:rand(1...10),
