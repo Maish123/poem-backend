@@ -21,6 +21,7 @@ https://github.com/Maish123/poem-frontend
 1. Ruby
 2. ActiveRecord
 3. Sinatra
+4. sqlite3
  
 ## Getting Started
 Run the backend side first to get the server up and running then go to the front-end.
