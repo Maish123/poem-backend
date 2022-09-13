@@ -29,6 +29,11 @@ class ApplicationController < Sinatra::Base
     genre.to_json(include: :poems)
   end
 
+  get '/favourites' do
+    favourites = Poem.order(likes: :desc).limit(10)
+    favourites.to_json
+  end
+
   ##POST METHOD
 
   post "/poems" do
