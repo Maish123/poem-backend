@@ -13,9 +13,8 @@ https://github.com/Maish123/poem-frontend
 
 1. HTML
 2. CSS
-3. Bootstrap
-4. Javascript
-5. React js
+3. Javascript
+4. React js
 
 ## Dependencies for backend
 
