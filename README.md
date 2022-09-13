@@ -24,15 +24,22 @@ https://github.com/Maish123/poem-frontend
 3. Sinatra
  
 ## Getting Started
-Run the backend side first to get the server up and running.
+Run the backend side first to get the server up and running then go to the front-end.
 
 ### Backend Setup
-
-
+1.Open the repo locally after cloning it on your machine.
+2. Run bundle install to install all necessary ges to run the projects backend
+3. run bundle exec rake server/rake server to launch the server.
+4. The project runs on localport 9292
 
 ### Frontend Setup
 1. npm install to install the list of dependencies used for the project
-2. npm start to launch the project in the browser
+2. npm start to launch the project in the browser.
+
+## Benefits
+* A platform where creatives can express themselves to the general public.
+* Serves as an education point for many who want to ue their voices and inspire using poems as art.
+
 
 
 
